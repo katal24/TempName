@@ -3,7 +3,7 @@ angular.module('hello', ['ngRoute']).config(function ($routeProvider, $httpProvi
 
     //tu sie ustawia kontoler i szablon html w zaleznosci od mapowania
     $routeProvider.when('/', {
-        //index to slash / wiec jest Login to see your greeting
+        //index to slash
         templateUrl: 'home.html',
         controller: 'home'
     }).when('/login', {
@@ -31,7 +31,7 @@ angular.module('hello', ['ngRoute']).config(function ($routeProvider, $httpProvi
         };
 
         var authenticate = function (credentials, callback) {
-            //tu buduje sie jakies zapytanie
+
             var headers = credentials ? {
                 authorization: "Basic "
                 + btoa(credentials.username + ":"
