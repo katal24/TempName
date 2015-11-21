@@ -1,48 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Produkty</title>
-    <script src="js/angular-bootstrap.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/tempname.js"></script>
-</head>
-<body data-ng-app="tempname">
-
-<ul>
-    <li>
-        <a href="index.html">Home Page </a>
-    </li>
-
-    <li>
-        <a href="products.html">Produkty </a>
-    </li>
-</ul>
-
-<ul>
-    <li>
-        <a href="index.html">Home Page </a>
-    </li>
-
-    <li>
-        <a href="products.html">Produkty </a>
-    </li>
-</ul>
-
 Lista prodoktow z javy przez angulara:
 <div data-ng-controller="productsController">
-
-    Tekst z javy przez angulara na HTML:{{indexMessage}}
-
 
     <li data-ng-repeat="product in products">
         nazwa:{{ product.name }}
        kalorie: {{product.kcal}}
     </li>
 
-
 </div>
 
-
-</body>
-</html>
